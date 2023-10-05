@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Hyva\Checkout\Model\Magewire\Payment\PlaceOrderServiceProvider">
+        <arguments>
+            <argument name="placeOrderServiceList" xsi:type="array">
+                <item name="paypo"
+                      xsi:type="object">Snowdog\Hyva\Checkout\PayPo\Magewire\Payment\PlaceOrderServiceProvider
+                </item>
+            </argument>
+        </arguments>
+    </type>
+</config>
