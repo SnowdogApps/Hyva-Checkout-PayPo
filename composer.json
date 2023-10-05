@@ -1,0 +1,16 @@
+{
+	"name": "snowdog/module-hyva-checkout-paypo",
+	"description": "Hyva Checkout compatybility module for PayPo",
+	"type": "magento2-module",
+	"require": {
+		"paypo/module-paypo-payment": "*"
+	},
+	"autoload": {
+		"files": [
+			"src/registration.php"
+		],
+		"psr-4": {
+			"Snowdog\\Hyva\\Checkout\\PayPo\\": "src"
+		}
+	}
+}
